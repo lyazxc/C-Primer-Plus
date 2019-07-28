@@ -1,6 +1,11 @@
 #include<stdio.h>
 int main(void)
 {
-  printf("hello world! \n");
-  return 0;
+	float inch;
+	float meter;
+	printf("Enter your date（inches）:");
+	scanf("%f",&inch);
+	meter = inch * 2.54;
+	printf("%f = %fcm", inch ,meter);
+	return 0;
 }
