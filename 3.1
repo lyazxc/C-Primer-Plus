@@ -1,0 +1,105 @@
+/*上溢，下溢*/
+#include<stdio.h>
+int main(void)
+{
+	int a;
+  int d;
+	float b;
+	float c;
+	a = 1234567890987654;
+	b = 3.4e38 ;
+	c = 0.1234e-2;
+  d = 1234567890;
+	printf("%d   %f %d \n",a ,b * 100,d);
+	printf("%f",c * 0.01); 
+	return 0;
+ } 
+ 
+ /*输入一ASCII码 打印字符*/
+#include<stdio.h>
+int main(void)
+{
+	int ascii;
+	printf("Enter an ASCII code:");
+	scanf("%d",&ascii);
+	printf("%d is the ASCII code for %c.\n",ascii,ascii);
+	return 0;
+ }
+ 
+/*警告音打印文本*/
+#include<stdio.h>
+int main(void)
+{
+	printf("\a startled by the sudden sound sally shouted,\n \" By the Great pumpkin what was that!\"");
+	return 0;
+ } 
+ /*指数 P计数*/
+ #include<stdio.h>
+int main(void)
+{
+	float a;
+	printf("Enter a floating-point value: ");
+	scanf("%f",&a);
+	printf("fixed-point notation: %f\n",a);
+	printf("exponentail notation: %e\n",a);
+	printf("p notation: %a\n",a);	
+	return 0;
+ } 
+ /*年龄换算成秒*/
+ #include<stdio.h>
+int main(void)
+{
+	float a;
+	int age;
+	a = 3.156e7;
+	printf("Enter your age : \n");
+	scanf("%d",&age);
+	printf("Your age is %d  = %f",age ,age*a);
+	return 0;
+ } 
+ /*夸脱水分子*/
+ #include<stdio.h>
+int main(void)
+{
+	float water;
+	float quart;
+	float molecular;
+	float in;
+	water = 3.0e-23;
+	quart = 950;
+	printf("Enter your quart: ");
+	scanf("%f",&in);
+	molecular = in * quart / water;  
+	printf("%f quart %e molecular",in ,molecular);
+	return 0;
+ } 
+ /*输入英尺输出身高*/
+ #include<stdio.h>
+int main(void)
+{
+	float a;
+	float b;
+	printf("Enter your height: ");
+	scanf("%f",&a );
+	b = a * 2.54;
+	printf("Your height is %fcm",b);
+	return 0;
+ } 
+ /*品脱 杯 盎司 大汤勺 茶勺*/
+ #include<stdio.h>
+int main(void)
+{
+	float a;  /*品脱*/
+	int b;    /*杯*/ 
+	int c;    /*盎司*/ 
+	int d;    /*大汤勺*/ 
+	int e;    /*茶勺*/ 
+	printf("Enter your date: ");
+	scanf("%d" ,&b);
+	a = b * 0.5;  /*品脱*/ 
+	c = b * 8;    /*盎司*/ 
+	d = c * 2;    /*大汤勺*/ 
+	e = d * 3;     /*茶勺*/ 
+	printf("品脱=%f 杯=%d 盎司=%d 大汤勺=%d 茶勺=%d", a,b,c,d,e);
+	return 0;
+ } 
