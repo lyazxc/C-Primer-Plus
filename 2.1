@@ -1,0 +1,117 @@
+/*编程练习2.1*/
+#include<stdio.h>
+int main(void)
+{
+	printf(" Gustav Mahler\n");
+	printf(" Gustav \n Mahler\n");
+	printf(" Guestav ");
+	printf(" Mahler ");
+	return 0;
+ } 
+ 
+ /*编程练习2.2*/
+ #include<stdio.h>
+ int main(void)
+ {
+ printf(" Gustav Mahler  xxx province xxx city");
+ return 0 ;
+ }
+ 
+ /*编程练习 2.3*/
+  #include<stdio.h>
+ int main (void)
+ {
+ int age ;
+ int days;
+ printf("age：");
+ scanf("%d",&age);
+ printf("age:%d days:%d", age ,age *365); /*不考虑闰年情况*/
+ return 0;
+ }
+ /*编程练习2.4*/
+ #include<stdio.h>
+void jolly(void);
+void deny(void);
+int main (void)
+{
+	jolly();
+	jolly();
+	jolly();
+	deny();
+	return 0;
+}
+void jolly(void)
+{
+	printf("For he's a jolly good fellow!\n");
+}
+void deny(void)
+{
+	printf("which nobody can deny!\n");
+}
+/*编程练习2.5*/
+#include<stdio.h>
+void br(void);
+void ic(void);
+int main(void)
+{
+	br();ic();
+	printf("\n");
+	ic();
+	printf("\n");
+	br();
+	return 0;
+}
+void br(void)
+{
+	printf("Brazil, Russia ");
+}
+void ic(void)
+{
+	printf("India, China ");
+}
+/*编程练习2.6*/
+#include<stdio.h>
+int main (void)
+{
+	int toes;
+	toes = 10;
+	printf("toes=%d toes的平方=%d toes的两倍=%d",toes ,toes*toes , toes*2);
+	return 0;
+}
+/*编程练习2.7*/
+#include<stdio.h>
+void smile(void);
+int main(void)
+{
+	smile();smile();smile();
+	printf("\n");
+	smile();smile();
+	printf("\n");
+	smile();
+	return 0;
+}
+void smile(void)
+{
+	printf("Smile!");
+}
+/*编程练习2.8*/
+#include<stdio.h>
+void one_three(void);
+void two(void);
+int main(void)
+{
+	printf("starting now:\n");
+	one_three();
+	printf("done!");
+	return 0;
+}
+void one_three(void)
+{
+	printf("one\n");
+	two();
+	printf("three\n");
+}
+void two(void)
+{
+	printf("two\n");
+}
