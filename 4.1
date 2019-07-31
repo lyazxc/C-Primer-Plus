@@ -14,4 +14,118 @@ int main (void)
 	printf("float epsilon = %e \n",FLT_EPSILON);
 	return 0;
 }
-/**/
+/*名，姓的格式打印*/
+#include<stdio.h> 
+int main (void)
+{
+	char name[40];
+	char name1[40];
+	printf("Enter your name: \n");
+	scanf("%s",name);
+	printf("Enter your name: \n");
+	scanf("%s",name1);
+	printf("Hello %s,%s",name ,name1);
+	return 0;
+}
+
+/*用户输入名字后*/
+#include<stdio.h> 
+#include<string.h> 
+int main (void)
+{
+	char name[40];
+	printf("Enter your name: \n");
+	scanf("%s",name);
+	printf("\"%s\"\n",name);
+	printf("\"%20s\"\n",name);
+	printf("\"%-20s\"\n",name);
+	printf("\"%*s\"\n",strlen(name)+3,name);
+	return 0;
+}
+/*浮点数打印*/
+#include<stdio.h> 
+
+int main (void)
+{
+	float i = 21.3;
+	printf("The input is %2.1f or %2.1e \n",i,i);
+	printf("The inpur is %+2.3f or %2.3E \n",21.29,21.29);
+	return 0;
+}
+/*4.4*/
+#include<stdio.h> 
+
+int main (void)
+{
+	char name [40];
+	float inches ;
+	printf("Enter your name; \n");
+	scanf("%s",name);
+	printf("Enter your Inches : \n");
+	scanf("%f",&inches);
+	printf("%s, you are %.3f feet tall",name , inches / 12  );
+	return 0;
+}
+/*下载速度计算*/
+#include<stdio.h> 
+
+int main (void)
+{
+	float speed ;
+	float file;
+	printf("Enter your speed(Mb/s): \n");
+	scanf("%f",&speed);
+	printf("Enter your file(MB/s): \n");
+	scanf("%f",&file);
+	printf("At %.2f megabites per sec, a file of %.2f megabytes \
+	downloads in %.2f sec",speed ,file , file * 8 / speed );
+	return 0;
+}
+/*4.6*/
+#include<stdio.h> 
+#include<string.h>
+int main (void)
+{
+	char first [40];
+	char last[40];
+	int  fwidth;
+	int  lwidth;
+	printf("Enter your firstname:\n");
+	scanf("%s",first);
+	printf("Enter your lastname:\n");
+	scanf("%s",last);
+	fwidth = strlen(first);
+	lwidth = strlen(last);
+	printf("%s %s\n",first ,last);
+	printf("%*d %*d\n",fwidth,fwidth,lwidth,lwidth);
+	printf("%s %s\n",first,last);
+	printf("%-*d %-*d\n",fwidth,fwidth,lwidth,lwidth);
+	return 0;
+}
+/*double float*/
+#include<stdio.h> 
+#include<float.h>
+int main (void)
+{
+	double i = 1.0/3.0;
+	float o = 1.0/3.0;
+	printf("%.6f %.6f \n",i,o);
+	printf("%.12f %.12f \n",i,o);
+	printf("%.16f %.16f \n",i,o);
+	printf("%d %d \n",FLT_DIG,DBL_DIG);
+	return 0;
+}
+/*4.8*/
+#include<stdio.h> 
+#include<string.h>
+int main (void)
+{
+	const float a = 3.785;
+	const float b = 1.609;
+	float c,d; 
+	printf("Enter your date : \n");
+	scanf("%f %f", &c,&d);
+	printf("%.1f\n", c / d );
+	printf("%.1f" ,100 * d* a / c * b);
+	return 0;
+}
