@@ -74,3 +74,99 @@ int main(void)
 		}	
 	return 0;
  } 
+/*5.5*/
+#include<stdio.h>
+int main (void) 
+{
+	int count,sum;
+	int n;
+	printf("Enter your count : \n");
+	scanf("%d",&n);
+	count = 0;
+	sum = 0;
+	while( count++ < n)
+	{
+		sum = sum + count;
+		printf("sum =%d \n",sum);
+	}
+	printf("end \n");
+	return 0;
+}
+/*5.6*/
+#include<stdio.h>
+int main (void) 
+{
+	int count,sum;
+	int n;
+	int e;
+	printf("Enter your count : \n");
+	scanf("%d",&n);
+	count = 0;
+	sum = 0;
+	while( count++ < n)
+	{
+		e = count * count;
+		sum =  e + sum;
+		printf("sum =%d \n",sum);
+	}
+	printf("end \n");
+	return 0;
+}
+/*5.7*/
+#include<stdio.h>
+void pound(double b); //带参数的函数 
+int main (void)
+
+{
+	double a ;//用户输入的值 
+	printf("Enter your number : \n");
+	scanf("%lf",&a);
+	pound(a);
+	return 0;
+}
+void pound(double b)
+{
+	printf("%lf ",b*b*b);
+}
+/*5.8*/
+#include<stdio.h>
+int main(void)
+{
+	int a; //用户输入第一个
+	int b;//用户输入第二个 
+	int c;//取模后的值 
+	printf("This program computes moduli.\n");
+	printf("Enter an integer to server as the second operand: ");
+	scanf("%d",&a);
+	printf("Now Enter the first operand: ");
+	scanf("%d",&b);
+	while ( b > 0 )
+	{
+		c = b % a;
+		printf("%d  %% %d is %d \n",b,a,c);
+		printf("Enter next number for first operand. (<= 0 quit)\n");
+		scanf("%d",&b);
+	 } 
+	 printf("Done \n");
+	return 0;
+ } 
+ /*5.9*/
+ #include<stdio.h>
+void Temperatures(double n);
+int main (void)
+{
+	double n;
+	printf("输入华氏度："); 
+	while (scanf("%lf",&n)==1)
+	{
+		Temperatures(n);
+	}
+
+ } 
+void Temperatures(double n)
+{
+	
+	const  double a = 273.16;
+	double b = 5.0 /9.0 * (n  - 32.0);
+	printf("摄氏度 %.2lf  开氏度%.2lf  华氏度%.2lf \n", b, b+a , n);
+}
