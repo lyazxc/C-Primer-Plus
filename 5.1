@@ -1,0 +1,76 @@
+/*分钟转换小时分钟*/
+#include<stdio.h>
+#define MIN 60
+int main(void)
+{
+	int time;
+	int hour;
+	int min;
+	printf("Please Enter Time(min): \n");
+	scanf("%d",&time);
+	while (time > 0 )
+	{
+		hour = time / MIN ;
+		min	= time % MIN ;
+		printf("%d,hour  %d,min \n",hour,min);
+		scanf("%d",&time);
+	}
+	printf("End");
+	return 0;
+ } 
+ /*5.2*/
+ #include<stdio.h>
+
+int main(void)
+{
+	int num ;
+	int a ;
+  a = 0;
+	printf("输入一个整数：\n");
+	scanf("%d",&num);
+	while (a++ <= 10)
+		printf("%d ", num + a-1);
+	
+	return 0;
+ } 
+ /*5.3*/
+#include<stdio.h>
+#define WEEK 7
+int main(void)
+{
+	int day;
+	int a ; //周 
+	int b ; //天数 
+	printf("Please Enter your days: \n");
+	scanf("%d",&day);
+	while( day > 0 )
+	{
+	a = day / WEEK;
+	b = day % WEEK; 
+	printf("%d days are %d weeks, %d days.\n",day , a ,b);
+	scanf("%d",&day);
+	}
+	return 0;
+ } 
+ /*5.4*/
+ #include<stdio.h>
+#define INCHES 0.3937
+#define IN_FE  0.0833
+#define CM_FE  0.0328
+int main(void)
+{
+	float height;
+	float a ;
+	int c;
+	printf("Enter a height in centimeters: ");
+	scanf("%f" ,&height);
+	while(height >= 0 )
+		{
+		a = (height * INCHES) - ( c / IN_FE) ;
+		c = height * CM_FE;
+		printf("%.1f cm = %d feet ,%.1f inches \n",height,c,a);
+		printf("Enter a height in centimeters(<=o quit): ");
+		scanf("%f",&height);
+		}	
+	return 0;
+ } 
