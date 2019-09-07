@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main(void)
+{
+	long num;
+	long sum =0; //把sum初始化为0
+	
+	//int status;
+
+
+	printf("Please Enter an integer to be summed:");
+	printf("q to quit!\n");
+	
+  //status = scanf("%ld", &num);
+	//while( status == 1 ) //判断是否相等 ==相当于“等于”
+
+while (scanf("%ld",&num))
+	{
+		sum = sum + num;
+		printf("Please enter netx integer (q to quit): ");
+		
+    //status = scanf("%ld", &num);
+	
+  }
+  
+
+	printf("Those integers sum to %ld. \n",sum);
+
+	return 0;
+}
